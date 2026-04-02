@@ -32,7 +32,7 @@ export default function ContactSection() {
             className="text-display mb-16"
             style={{ fontSize: 'clamp(2.5rem, 5vw, 5rem)', color: 'var(--fg-light)' }}
           >
-            Let's build something together.
+            Let&apos;s build something together.
           </motion.h2>
         </motion.div>
 
@@ -122,8 +122,8 @@ export default function ContactSection() {
                 ))}
 
                 <motion.div variants={fadeUp} className="flex flex-col gap-2">
-                  <label htmlFor="message" className="label-mono" style={{ color: 'rgba(242,240,233,0.4)' }}>
-                    /// Message
+                  <label htmlFor="message" className="label-mono" style={{ color: 'var(--section-label-dark)' }}>
+                    {'/// Message'}
                   </label>
                   <textarea
                     id="message"
