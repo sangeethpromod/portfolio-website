@@ -1,4 +1,5 @@
 import { InputHTMLAttributes, TextareaHTMLAttributes } from 'react'
+import { UseFormRegisterReturn } from 'react-hook-form'
 
 type ContactFieldProps = {
   label: string
@@ -6,7 +7,7 @@ type ContactFieldProps = {
   as?: 'input' | 'textarea'
   type?: string
   placeholder?: string
-  register?: object
+  register?: UseFormRegisterReturn
   error?: string
 }
 

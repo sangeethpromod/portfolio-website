@@ -57,12 +57,12 @@ export default function SkillsSection() {
                       border: '1px solid rgba(10,10,10,0.15)',
                       color: 'rgba(10,10,10,0.7)',
                     }}
-                    onMouseEnter={e => {
+                    onMouseEnter={(e: React.MouseEvent<HTMLSpanElement>) => {
                       const el = e.currentTarget
                       el.style.borderColor = 'var(--accent)'
                       el.style.color = 'var(--accent)'
                     }}
-                    onMouseLeave={e => {
+                    onMouseLeave={(e: React.MouseEvent<HTMLSpanElement>) => {
                       const el = e.currentTarget
                       el.style.borderColor = 'rgba(10,10,10,0.15)'
                       el.style.color = 'rgba(10,10,10,0.7)'

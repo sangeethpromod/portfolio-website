@@ -115,8 +115,8 @@ export default function ContactSection() {
                         borderBottom: '1px solid rgba(242,240,233,0.2)',
                         color: 'var(--fg-light)',
                       }}
-                      onFocus={e => e.target.style.borderBottomColor = 'rgba(242,240,233,0.6)'}
-                      onBlur={e => e.target.style.borderBottomColor = 'rgba(242,240,233,0.2)'}
+                      onFocus={(e: React.FocusEvent<HTMLInputElement>) => e.target.style.borderBottomColor = 'rgba(242,240,233,0.6)'}
+                      onBlur={(e: React.FocusEvent<HTMLInputElement>) => e.target.style.borderBottomColor = 'rgba(242,240,233,0.2)'}
                     />
                   </motion.div>
                 ))}
@@ -135,8 +135,8 @@ export default function ContactSection() {
                       borderBottom: '1px solid rgba(242,240,233,0.2)',
                       color: 'var(--fg-light)',
                     }}
-                    onFocus={e => e.target.style.borderBottomColor = 'rgba(242,240,233,0.6)'}
-                    onBlur={e => e.target.style.borderBottomColor = 'rgba(242,240,233,0.2)'}
+                    onFocus={(e: React.FocusEvent<HTMLTextAreaElement>) => e.target.style.borderBottomColor = 'rgba(242,240,233,0.6)'}
+                    onBlur={(e: React.FocusEvent<HTMLTextAreaElement>) => e.target.style.borderBottomColor = 'rgba(242,240,233,0.2)'}
                   />
                 </motion.div>
 
