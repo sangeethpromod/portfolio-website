@@ -63,9 +63,9 @@ export default function HeroSection() {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.1 }}
           className="label-mono mb-12"
-          style={{ color: 'rgba(10,10,10,0.5)' }}
+          style={{ color: 'var(--section-label-light)' }}
         >
-          /// Portfolio · {new Date().getFullYear()}
+          {`/// Portfolio \u00B7 ${new Date().getFullYear()}`}
         </motion.p>
 
         {/* Main grid */}

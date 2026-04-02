@@ -15,7 +15,7 @@ export default function Footer() {
           <div>
             <p className="text-display text-2xl mb-1" style={{ color: 'var(--fg-light)' }}>Sangeeth Promod</p>
             <p className="label-mono" style={{ color: 'rgba(242,240,233,0.35)' }}>
-              /// Senior Software Engineer · © {new Date().getFullYear()}
+              {'/// Senior Software Engineer \u00B7 \u00A9 '}{new Date().getFullYear()}
             </p>
           </div>
 

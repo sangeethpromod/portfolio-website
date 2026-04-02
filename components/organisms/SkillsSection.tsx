@@ -15,9 +15,9 @@ export default function SkillsSection() {
           whileInView="visible"
           viewport={{ once: true, amount: 0.1 }}
         >
-          <motion.p variants={fadeUp} className="label-mono mb-8" style={{ color: 'rgba(10,10,10,0.45)' }}>
-            /// 04 — Skills
-          </motion.p>
+          <motion.h3 variants={fadeUp} className="section-label mb-8" aria-label="Section 4: Skills">
+            {'/// 04 — Skills'}
+          </motion.h3>
           <motion.h2
             variants={fadeUp}
             className="text-display mb-16"
@@ -43,8 +43,8 @@ export default function SkillsSection() {
               style={{ borderBottom: '1px solid rgba(10,10,10,0.10)' }}
             >
               {/* Category label */}
-              <p className="label-mono" style={{ color: 'rgba(10,10,10,0.45)' }}>
-                /// {group.category}
+              <p className="label-mono" style={{ color: 'var(--section-label-light)' }}>
+                {'/// '}{group.category}
               </p>
 
               {/* Skills as flowing text */}

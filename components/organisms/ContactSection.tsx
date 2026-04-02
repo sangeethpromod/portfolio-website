@@ -23,9 +23,9 @@ export default function ContactSection() {
           whileInView="visible"
           viewport={{ once: true, amount: 0.1 }}
         >
-          <motion.p variants={fadeUp} className="label-mono mb-8" style={{ color: 'rgba(242,240,233,0.4)' }}>
-            /// 05 — Contact
-          </motion.p>
+          <motion.h3 variants={fadeUp} className="section-label section-label-dark mb-8" aria-label="Section 5: Contact">
+            {'/// 05 — Contact'}
+          </motion.h3>
 
           <motion.h2
             variants={fadeUp}
@@ -85,7 +85,7 @@ export default function ContactSection() {
               >
                 <CheckCircle size={40} style={{ color: 'var(--accent)' }} />
                 <p className="text-display text-2xl" style={{ color: 'var(--fg-light)' }}>Message sent!</p>
-                <p className="label-mono" style={{ color: 'rgba(242,240,233,0.4)' }}>/// I'll be in touch soon</p>
+                <p className="label-mono" style={{ color: 'rgba(242,240,233,0.4)' }}>{'/// I\'ll be in touch soon'}</p>
               </motion.div>
             ) : (
               <motion.form
@@ -102,7 +102,7 @@ export default function ContactSection() {
                   { name: 'email', label: '/// Email', placeholder: 'your@email.com', type: 'email', as: 'input' as const },
                 ].map((field) => (
                   <motion.div key={field.name} variants={fadeUp} className="flex flex-col gap-2">
-                    <label htmlFor={field.name} className="label-mono" style={{ color: 'rgba(242,240,233,0.4)' }}>
+                  <label htmlFor={field.name} className="label-mono" style={{ color: 'var(--section-label-dark)' }}>
                       {field.label}
                     </label>
                     <input

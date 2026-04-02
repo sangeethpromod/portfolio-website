@@ -15,9 +15,9 @@ export default function ExperienceSection() {
           whileInView="visible"
           viewport={{ once: true, amount: 0.1 }}
         >
-          <motion.p variants={slideInLeft} className="label-mono mb-8" style={{ color: 'rgba(10,10,10,0.45)' }}>
-            /// 03 — Experience
-          </motion.p>
+          <motion.h3 variants={slideInLeft} className="section-label mb-8" aria-label="Section 3: Experience">
+            {'/// 03 — Experience'}
+          </motion.h3>
           <motion.h2
             variants={slideInLeft}
             className="text-display mb-16"
@@ -45,7 +45,7 @@ export default function ExperienceSection() {
               {/* Left: role meta */}
               <div>
                 <p className="font-body font-semibold text-base mb-1" style={{ color: 'var(--fg)' }}>{exp.role}</p>
-                <p className="label-mono mb-2" style={{ color: 'var(--accent)' }}>/// {exp.company}</p>
+                <p className="label-mono mb-2" style={{ color: 'var(--accent)' }}>{'/// '}{exp.company}</p>
                 <p className="label-mono" style={{ color: 'rgba(10,10,10,0.4)' }}>{exp.period}</p>
               </div>
 

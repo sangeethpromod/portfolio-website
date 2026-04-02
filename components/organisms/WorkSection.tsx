@@ -17,9 +17,9 @@ export default function WorkSection() {
           whileInView="visible"
           viewport={{ once: true, amount: 0.1 }}
         >
-          <motion.p variants={fadeUp} className="label-mono mb-8" style={{ color: 'rgba(10,10,10,0.45)' }}>
-            /// 02 — Work
-          </motion.p>
+          <motion.h3 variants={fadeUp} className="section-label mb-8" aria-label="Section 2: Work">
+            {'/// 02 — Work'}
+          </motion.h3>
 
           <motion.h2
             variants={fadeUp}
@@ -60,7 +60,7 @@ export default function WorkSection() {
               {/* Content */}
               <div className="p-6 flex flex-col gap-3">
                 <p className="label-mono" style={{ color: 'rgba(242,240,233,0.4)' }}>
-                  /// {project.client}
+                  {'/// '}{project.client}
                 </p>
                 <h3 className="font-display font-bold text-xl" style={{ color: 'var(--fg-light)' }}>
                   {project.title}

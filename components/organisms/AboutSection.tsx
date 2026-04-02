@@ -16,9 +16,9 @@ export default function AboutSection() {
           whileInView="visible"
           viewport={{ once: true, amount: 0.15 }}
         >
-          <motion.p variants={fadeUp} className="label-mono mb-8" style={{ color: 'rgba(10,10,10,0.45)' }}>
-            /// 01 — About
-          </motion.p>
+          <motion.h3 variants={fadeUp} className="section-label mb-8" aria-label="Section 1: About">
+            {'/// 01 — About'}
+          </motion.h3>
 
           <motion.h2
             variants={fadeUp}
@@ -52,8 +52,8 @@ export default function AboutSection() {
                 <p className="text-display mb-1" style={{ fontSize: 'clamp(2rem, 4vw, 3.5rem)', color: 'var(--fg)' }}>
                   {stat.value}
                 </p>
-                <p className="label-mono" style={{ color: 'rgba(10,10,10,0.45)' }}>
-                  /// {stat.label}
+                <p className="label-mono" style={{ color: 'var(--section-label-light)' }}>
+                  {stat.label}
                 </p>
               </div>
             ))}
